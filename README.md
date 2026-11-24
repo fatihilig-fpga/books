@@ -39,6 +39,3 @@ If you are new to VHDL or FPGA design, start with **Volume 1** and progress thro
 This repository is maintained by **Fatih İliğ** as a companion resource to the *FPGA Design with VHDL* book series.
 
 > **Note:** Volumes 2 and 3 are planned. Their contents and supporting materials may change during development.
-# books
-# books
-# books

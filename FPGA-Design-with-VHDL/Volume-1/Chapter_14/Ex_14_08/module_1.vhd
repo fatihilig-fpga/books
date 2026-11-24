@@ -1,0 +1,26 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY MODULE_1 IS
+  GENERIC (
+    g_NUM_OF_XOR : INTEGER := 8
+  );
+  PORT (
+    a_i : IN STD_LOGIC_VECTOR((g_NUM_OF_XOR - 1) DOWNTO 0);
+    b_i : IN STD_LOGIC;
+    g_o : OUT STD_LOGIC
+  );
+END ENTITY MODULE_1;
+
+ARCHITECTURE behavioral OF MODULE_1 IS
+BEGIN
+  p_xor : PROCESS (a_i, b_i)
+    VARIABLE C : STD_LOGIC_VECTOR(g_NUM_OF_XOR DOWNTO 0);
+  BEGIN
+    C(0) := b_i;
+    FOR i IN 0 TO (g_NUM_OF_XOR - 1) LOOP
+      C(i + 1) := a_i(i) XOR C(i);
+    END LOOP;
+    g_o <= C(g_NUM_OF_XOR);
+  END PROCESS p_xor;
+END ARCHITECTURE behavioral;

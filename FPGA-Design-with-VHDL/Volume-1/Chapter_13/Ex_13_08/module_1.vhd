@@ -1,0 +1,26 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+ENTITY MODULE_1 IS
+  PORT (
+    A_i : IN STD_LOGIC;
+    B_i : IN STD_LOGIC;
+    C_i : IN STD_LOGIC;
+    F_o : OUT STD_LOGIC
+  );
+END ENTITY MODULE_1;
+
+ARCHITECTURE behavioral OF MODULE_1 IS
+  SIGNAL V_s  : STD_LOGIC;
+  SIGNAL V1_s : STD_LOGIC;
+BEGIN
+
+  p_signal : PROCESS (A_i, B_i, C_i, V1_s, V_s)
+  BEGIN
+    V1_s <= A_i NAND B_i;
+    V_s  <= V1_s NOR C_i;
+    F_o  <= NOT V_s;
+  END PROCESS p_signal;
+
+END ARCHITECTURE behavioral;
