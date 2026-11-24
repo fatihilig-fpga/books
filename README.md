@@ -39,3 +39,20 @@ If you are new to VHDL or FPGA design, start with **Volume 1** and progress thro
 This repository is maintained by **Fatih İliğ** as a companion resource to the *FPGA Design with VHDL* book series.
 
 > **Note:** Volumes 2 and 3 are planned. Their contents and supporting materials may change during development.
+
+
+## Stay Updated — Volume 2 Is Coming!
+
+**Enjoying *FPGA Design with VHDL – Volume 1*?**
+
+I'm currently preparing the next volume in the *FPGA Design with VHDL* series.
+
+If you'd like to be among the first to know when **Volume 2** is published, you can join my free email notification list.
+
+### [Get Notified About Volume 2](https://fatih-ilig.kit.com/5346cfe3db)
+
+You may also receive occasional updates about new FPGA/VHDL educational resources, practical examples, and future books.
+
+**Subscription is completely optional.** All source code in this repository is freely accessible without joining the email list.
+
+Thank you for reading the book and supporting this project. I hope these examples help you build confidence in VHDL and FPGA design!
