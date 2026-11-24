@@ -26,7 +26,7 @@ BEGIN
     IF rising_edge(clk_i) THEN
       -- Synchronous reset: Clear all shift-register stages when reset_i is '1'.
       IF reset_i = '1' THEN
-        stages_s <= ((OTHERS => '0'));
+        stages_s <= (OTHERS => '0');
       ELSE
         -- Shift all stored values forward by one stage
         -- and place the current d_i value into the first stage.

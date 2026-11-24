@@ -20,7 +20,7 @@ BEGIN
     IF rising_edge(clk_i) THEN
       -- Synchronous reset: Clear all four stages when reset_i is '1'.
       IF reset_i = '1' THEN
-        stages_s <= ((OTHERS => '0'));
+        stages_s <= (OTHERS => '0');
       ELSE
         -- Shift the data one stage forward.
         stages_s(0)          <= d_i;

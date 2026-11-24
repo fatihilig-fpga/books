@@ -23,14 +23,14 @@ BEGIN
   p_stimulus : PROCESS
   BEGIN
     reset_s  <= '1';
-    data_i_s <= ((OTHERS => '0'));
+    data_i_s <= (OTHERS => '0');
     WAIT UNTIL rising_edge(clk_s);
     reset_s <= '0';
     WAIT UNTIL falling_edge(clk_s);
     WAIT UNTIL falling_edge(clk_s);
     data_i_s <= "00001111";
     WAIT UNTIL falling_edge(clk_s);
-    data_i_s <= ((OTHERS => '0'));
+    data_i_s <= (OTHERS => '0');
     WAIT;
   END PROCESS p_stimulus;
   -- -------------------------------
