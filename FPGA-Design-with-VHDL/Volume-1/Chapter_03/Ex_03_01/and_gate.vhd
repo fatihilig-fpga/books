@@ -1,3 +1,8 @@
+-- ============================================================
+-- File    : and_gate.vhd
+-- Purpose : A simple 2-input AND gate
+-- ============================================================
+-- Library
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 -- Entity declaration

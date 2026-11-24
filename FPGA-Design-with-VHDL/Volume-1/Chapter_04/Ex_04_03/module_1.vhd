@@ -1,8 +1,7 @@
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
--- Entity declaration
--- The entity defines the public interface of MODULE_1.
+-- Entity declaration. The entity defines the public interface of MODULE_1.
 ENTITY MODULE_1 IS
   PORT (
     -- This input port has no default value. It is also not driven by a testbench, another 

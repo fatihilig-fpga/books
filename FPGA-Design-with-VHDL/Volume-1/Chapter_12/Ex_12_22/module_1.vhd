@@ -14,7 +14,6 @@ ARCHITECTURE behavioral OF MODULE_1 IS
   SIGNAL count_o    : STD_LOGIC_VECTOR(7 DOWNTO 0); -- Current counter value.
   SIGNAL count_s : UNSIGNED(7 DOWNTO 0); -- register used to store the current counter value.
 BEGIN
-  -- ---------------------------------------------
   -- SIMULATION-ONLY SECTION. This section generates the input values required for simulation.
   clk_i <= NOT clk_i AFTER 5 NS;
   --
