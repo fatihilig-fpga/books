@@ -1,4 +1,4 @@
-LIBRARY IEEE;
+LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 
 ENTITY MODULE_1 IS
@@ -6,12 +6,12 @@ END ENTITY MODULE_1;
 
 ARCHITECTURE sim OF MODULE_1 IS
   -- Define a 2D array type called t_Matrix. This array has two index ranges:
-  --   0 TO 3  -> row index
-  --   0 TO 7  -> column index
-  -- This means the array has 4 rows and 8 columns. Each element of the array is an INTEGER.
-  TYPE t_Matrix IS ARRAY (0 TO 3, 0 TO 7) OF INTEGER;
+  --   0 TO 3  -> column index
+  --   0 TO 7  -> row index
+  -- This means the array has 4 columns and 8 rows. Each element of the array is an INTEGER.
+  TYPE t_Matrix IS ARRAY (0 TO 7, 0 TO 3) OF INTEGER;
 
-  -- Create a signal using the t_Matrix type. matrix_s is now a 4x8 matrix.
+  -- Create a signal using the t_Matrix type. matrix_s is now a 8x4 matrix.
   -- It contains 32 integer elements in total.
   SIGNAL matrix_s : t_Matrix;
 BEGIN
