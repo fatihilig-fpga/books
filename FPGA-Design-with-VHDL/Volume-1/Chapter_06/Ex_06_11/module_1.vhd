@@ -6,8 +6,8 @@ END ENTITY MODULE_1;
 
 ARCHITECTURE sim OF MODULE_1 IS
   -- Define a 2D array type called t_Matrix. This array has two index ranges:
-  --   0 TO 3  -> column index
   --   0 TO 7  -> row index
+  --   0 TO 3  -> column index
   -- This means the array has 4 columns and 8 rows. Each element of the array is an INTEGER.
   TYPE t_Matrix IS ARRAY (0 TO 7, 0 TO 3) OF INTEGER;
 
